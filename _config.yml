@@ -22,7 +22,7 @@ name                     : "Tejas Prabhu"
 description              : "A dedicated Software, DevOps, and Cloud Engineer with a passion for enhancing system efficiency and solving complex technical challenges."
 url                      : "https://your-username.github.io" # Replace with your actual site URL
 baseurl                  : "" # If hosted at root, leave empty. Otherwise, set to your repository name
-repository               : "TejasPrabhu/your-repo-name" # Replace with your GitHub repository
+repository               : "TejasPrabhu/TejasPrabhu" # Replace with your GitHub repository
 teaser                   : "/assets/images/teaser.png" # Ensure you have a teaser image
 logo                     : "/assets/images/logo.png" # Ensure you have a logo image
 masthead_title           : "Welcome to My Professional Portfolio"
@@ -30,7 +30,7 @@ breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : true
 copyright                : "© 2024 Tejas Prabhu"
-copyright_url            : "https://your-website.com" # Replace with your actual URL
+copyright_url            : "https://tejasprabhu.com" # Replace with your actual URL
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -122,7 +122,7 @@ analytics:
 # Site Author
 author:
   name             : "Tejas Prabhu"
-  avatar           : "/assets/images/avatar.jpg" # Ensure you have an avatar image
+  avatar           : "/assets/images/avatar.png" # Ensure you have an avatar image
   bio              : "Cloud Engineer Intern at North Carolina Institute for Climate Studies with a Master's in Computer Science from NC State University."
   location         : "Raleigh, NC"
   email            : "tejas.prabhu.career@gmail.com"
