@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Zhi Mang Xing
-- Font Author: Copyright 2018 The ZhiMangXing Project Authors (https://github.com/googlefonts/zhimangxing)
-- Font Source: https://fonts.gstatic.com/s/zhimangxing/v17/f0Xw0ey79sErYFtWQ9a2rq-g0actfektIJ0.ttf
+- Font Title: Kantumruy Pro
+- Font Author: Copyright 2022 The Kantumruy Project Authors (https://www.github.com/sovichet/kantumruy-pro)
+- Font Source: https://fonts.gstatic.com/s/kantumruypro/v8/1q2TY5aECkp34vEBSPFOmJxwvk_pilU8OGNfyg2Jq0s0M34dR6dW.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
