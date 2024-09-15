@@ -232,3 +232,13 @@ SliderJS - Ettrics;
 Design - Sara Mazal Web;
 Fonts - Google Fonts
 */
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Typed('.typed', {
+    strings: ['Software Engineer', 'DevOps Enthusiast', 'Cloud Specialist'],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000
+  });
+});

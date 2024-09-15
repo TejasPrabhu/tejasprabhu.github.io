@@ -43,24 +43,30 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+      </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="hero-title mb-4">Tejas Prabhu</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Software Engineer, DevOps Enthusiast, Cloud Specialist"></span></p>
-        </div>
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Hi, I'm Tejas Prabhu</h1>
+      <p>I'm a <span class="typed" data-typed-items="Software Engineer, DevOps Enthusiast, Cloud Specialist"></span></p>
+      <div class="hero-description">
+        <p>Passionate about building efficient, scalable solutions through automation and cloud technologies. With 3+ years of experience in software development and a Master's in Computer Science from NC State University, I specialize in:</p>
+        <ul>
+          <li>Backend Development</li>
+          <li>DevOps Practices</li>
+          <li>Cloud Infrastructure</li>
+        </ul>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-get-started scrollto">Get In Touch</a>
+        <a href="#projects" class="btn-projects scrollto">View My Projects</a>
       </div>
     </div>
-  </div>
-  <!-- End Hero Section -->
+  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -338,106 +344,103 @@
           <div class="col-sm-12">
             <div class="contact-mf">
               <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message
-                      </h5>
+                <h5 class="title-left">
+                  Send Message
+                </h5>
+              </div>
+              <div>
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                      </div>
                     </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project, have any questions, or just want to connect!
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Raleigh, NC 27606</li>
-                        <li><span class="bi bi-envelope"></span> tejas.prabhu.career@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="https://linkedin.com/in/tejasprabhu"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                        <li><a href="https://github.com/TejasPrabhu"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="title-box-2 pt-4 pt-md-0">
+                <h5 class="title-left">
+                  Get in Touch
+                </h5>
+              </div>
+              <div class="more-info">
+                <p class="lead">
+                  I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project, have any questions, or just want to connect!
+                </p>
+                <ul class="list-ico">
+                  <li><span class="bi bi-geo-alt"></span> Raleigh, NC 27606</li>
+                  <li><span class="bi bi-envelope"></span> tejas.prabhu.career@gmail.com</li>
+                </ul>
+              </div>
+              <div class="socials">
+                <ul>
+                  <li><a href="https://linkedin.com/in/tejasprabhu"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                  <li><a href="https://github.com/TejasPrabhu"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Tejas Prabhu</strong>. All Rights Reserved</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </footer><!-- End  Footer -->
+  </div>
+</div>
+</section><!-- End Contact Section -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</main><!-- End #main -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<!-- ======= Footer ======= -->
+<footer>
+<div class="container">
+<div class="row">
+  <div class="col-sm-12">
+    <div class="copyright-box">
+      <p class="copyright">&copy; Copyright <strong>Tejas Prabhu</strong>. All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+</div>
+</footer><!-- End  Footer -->
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
