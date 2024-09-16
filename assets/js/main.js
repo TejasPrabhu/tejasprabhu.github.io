@@ -233,6 +233,21 @@ Design - Sara Mazal Web;
 Fonts - Google Fonts
 */
 
+document.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   new Typed('.typed', {
     strings: ['Software Engineer', 'DevOps Enthusiast', 'Cloud Specialist'],
@@ -241,4 +256,17 @@ document.addEventListener('DOMContentLoaded', () => {
     backSpeed: 50,
     backDelay: 2000
   });
+});
+
+var swiper = new Swiper('.blog-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  pagination: {
+    el: '.blog-slider__pagination',
+    clickable: true,
+  }
 });
