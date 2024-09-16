@@ -117,60 +117,114 @@
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="services-mf pt-5 route">
+    <section id="skills" class="skills-section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Skills
-              </h3>
-              <p class="subtitle-a">
-                My technical expertise
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>My technical expertise</p>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-code-slash"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Software Development</h2>
-                <p class="s-description text-center">
-                  Python, Golang, SQL, Javascript, HTML, CSS
-                </p>
-              </div>
-            </div>
+
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Software Development</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <i class="fab fa-python skill-icon"></i>
+                <span class="skill-name">Python</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-golang skill-icon"></i>
+                <span class="skill-name">Golang</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-js-square skill-icon"></i>
+                <span class="skill-name">JavaScript</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-database skill-icon"></i>
+                <span class="skill-name">SQL</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <span class="skill-name">HTML</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <span class="skill-name">CSS</span>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-cloud"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Cloud & Infrastructure</h2>
-                <p class="s-description text-center">
-                  AWS, Azure, Docker, Kubernetes, Helm, Terraform, Ansible
-                </p>
-              </div>
-            </div>
+
+          <div class="skill-category">
+            <h3>DevOps & Tools</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <i class="fab fa-git-alt skill-icon"></i>
+                <span class="skill-name">Git</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-linux skill-icon"></i>
+                <span class="skill-name">Linux</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-terminal skill-icon"></i>
+                <span class="skill-name">Bash</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-jenkins skill-icon"></i>
+                <span class="skill-name">Jenkins</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-github skill-icon"></i>
+                <span class="skill-name">GitHub Actions</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-ship skill-icon"></i>
+                <span class="skill-name">ArgoCD</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-chart-line skill-icon"></i>
+                <span class="skill-name">Prometheus</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-tachometer-alt skill-icon"></i>
+                <span class="skill-name">Grafana</span>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-gear"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">DevOps Tools</h2>
-                <p class="s-description text-center">
-                  Git, Linux, Bash, Jenkins, GitHub Actions, ArgoCD, Prometheus, Grafana, REST API
-                </p>
-              </div>
-            </div>
+
+          <div class="skill-category">
+            <h3>Cloud & Infrastructure</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <i class="fab fa-aws skill-icon"></i>
+                <span class="skill-name">AWS</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-microsoft skill-icon"></i>
+                <span class="skill-name">Azure</span>
+              </li>
+              <li class="skill-item">
+                <i class="fab fa-docker skill-icon"></i>
+                <span class="skill-name">Docker</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-dharmachakra skill-icon"></i>
+                <span class="skill-name">Kubernetes</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-box skill-icon"></i>
+                <span class="skill-name">Helm</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-cubes skill-icon"></i>
+                <span class="skill-name">Terraform</span>
+              </li>
+              <li class="skill-item">
+                <i class="fas fa-cogs skill-icon"></i>
+                <span class="skill-name">Ansible</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -344,105 +398,4 @@
           <div class="col-sm-12">
             <div class="contact-mf">
               <div id="contact" class="box-shadow-full">
-                <h5 class="title-left">
-                  Send Message
-                </h5>
-              </div>
-              <div>
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12 text-center my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                      <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="title-box-2 pt-4 pt-md-0">
-                <h5 class="title-left">
-                  Get in Touch
-                </h5>
-              </div>
-              <div class="more-info">
-                <p class="lead">
-                  I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project, have any questions, or just want to connect!
-                </p>
-                <ul class="list-ico">
-                  <li><span class="bi bi-geo-alt"></span> Raleigh, NC 27606</li>
-                  <li><span class="bi bi-envelope"></span> tejas.prabhu.career@gmail.com</li>
-                </ul>
-              </div>
-              <div class="socials">
-                <ul>
-                  <li><a href="https://linkedin.com/in/tejasprabhu"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                  <li><a href="https://github.com/TejasPrabhu"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section><!-- End Contact Section -->
-
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer>
-<div class="container">
-<div class="row">
-  <div class="col-sm-12">
-    <div class="copyright-box">
-      <p class="copyright">&copy; Copyright <strong>Tejas Prabhu</strong>. All Rights Reserved</p>
-    </div>
-  </div>
-</div>
-</div>
-</footer><!-- End  Footer -->
-
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
 
