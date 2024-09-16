@@ -45,35 +45,28 @@
       </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Hi, I'm Tejas Prabhu</h1>
-      <p>I'm a <span class="typed" data-typed-items="Software Engineer, DevOps Enthusiast, Cloud Specialist"></span></p>
-      <div class="hero-description">
-        <p>Passionate about building efficient, scalable solutions through automation and cloud technologies. With 3+ years of experience in software development and a Master's in Computer Science from NC State University, I specialize in:</p>
-        <ul>
-          <li>Backend Development</li>
-          <li>DevOps Practices</li>
-          <li>Cloud Infrastructure</li>
-        </ul>
-      </div>
-      <div class="hero-cta">
-        <a href="#contact" class="btn-get-started scrollto">Get In Touch</a>
-        <a href="#projects" class="btn-projects scrollto">View My Projects</a>
-      </div>
-    </div>
-  </section> -->
+  </header>
+  
+  <!-- End Header -->
 
   <!-- Hero Section -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
   <div class="hero-container text-center">
     <h1 class="text-white">Hi, I'm Tejas Prabhu</h1>
-    <p class="text-white">I'm a <span class="typed" data-typed-items="Software Engineer, DevOps Enthusiast, Cloud Specialist"></span></p>
+    <p class="text-white">I'm a <span class="typed"></span></p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        new Typed('.typed', {
+          strings: ["Software Engineer", "DevOps Enthusiast", "Cloud Specialist"],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true
+        });
+      });
+    </script>
     <div class="hero-description text-white">
-      <p>Passionate about building efficient, scalable solutions through automation and cloud technologies.</p>
+      <p>Passionate about building efficient, scalable solutions through automation and cloud technologies. With expertise in backend development, DevOps practices, and cloud infrastructure, I strive to drive innovation and efficiency.
+      </p>
       <div class="specializations">
         <span class="badge">Backend Development</span>
         <span class="badge">DevOps Practices</span>
@@ -100,15 +93,13 @@
           </div>
           <div class="about-text">
             <p class="lead">
-              Back in 2015, I decided to try my hand at developing simple HTML websites and tumbled head first into the rabbit hole of coding and web development. Today, I've built impactful software for a <a href="#" class="custom-link">biotech startup</a>, two <a href="#" class="custom-link">Fortune 500 companies</a>, and a <a href="#" class="custom-link">national research organization</a>.
+              You know how some people find their passion early on? Well, I took the scenic route through Electronics Engineering before realizing that programming was where the real fun is. It all clicked when I started dabbling in data analytics and machine learning—turns out, solving problems with just my fingertips is pretty addictive!
             </p>
-            <p class="lead">
-              I completed my <a href="#" class="custom-link">Master's in Computer Science</a> at the <a href="https://www.ncsu.edu/" class="custom-link">North Carolina State University</a>, USA having completed my <a href="#" class="custom-link">Bachelor of Technology</a> (B.Tech) focused in Computer and Communication Engineering from <a href="#" class="custom-link">Manipal University Jaipur</a>, India.
+              <p class="lead">
+              At Seagate Technologies, I channeled this enthusiasm into creating innovative test infrastructures within the system test group. While this role was rewarding, I sought to broaden my horizons and make a more significant impact. This aspiration led me to pursue a Master's in Computer Science at North Carolina State University, where I delved deeper into web development, DevOps practices, and cloud technologies. My internship at the North Carolina Institute for Climate Studies solidified my grasp on cloud fundamentals and reinforced my commitment to leveraging technology for meaningful solutions.
             </p>
-            <p class="lead">
-              Away from the keyboard, I unwind with a good book on my Kindle. Ask me about Oscar Wilde or Sylvia Plath, and I can chat for hours! I'm also a regular at local coffee shops, always on the hunt for the perfect mocha latte!
-            </p>
-          </div>
+              <p class="lead">
+                I'm driven by the desire to identify and address pain points from an end-user's perspective, enhancing systems for greater efficiency and usability. I thrive on having a comprehensive view of the projects I engage in and aim to contribute globally through my work. My core values—growth, adaptability, teamwork, mentorship, and perseverance—guide me in both my personal and professional life. They fuel my commitment to continuous learning and innovation in the tech world.
         </div>
       </div>
     </div>
@@ -118,12 +109,22 @@
 
 
      <!-- ======= Skills Section ======= -->
-     <section id="skills" class="skills-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>My technical expertise</p>
-        </div>
+
+        <section id="skills" class="portfolio-mf sect-pt4 route">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="title-box text-center">
+                  <h3 class="title-a">
+                    Skills
+                  </h3>
+                  <p class="subtitle-a">
+                    My technical toolset
+                  </p>
+                  <div class="line-mf"></div>
+                </div>
+              </div>
+            </div>
 
         <div class="skills-container">
           <div class="skill-category">
@@ -232,7 +233,7 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Experiences Section ======= -->
-    <section id="experiences" class="blog-mf sect-pt4 route">
+    <!-- <section id="experiences" class="blog-mf sect-pt4 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -296,10 +297,81 @@
           </div>
         </div>
       </div>
-    </section><!-- End Experiences Section -->
+    </section> -->
+    
+    <!-- ======= Experiences Section ======= -->
+<section id="experiences" class="portfolio-mf sect-pt4 route">
+  
+    
+  <div class="title-box text-center">
+    <h3 class="title-a">
+      Experiences
+    </h3>
+    <div class="line-mf"></div>
+  </div>
+<div class="blog-slider">
+<div class="blog-slider__wrp swiper-wrapper">
+
+<!--1-->
+<div class="blog-slider__item swiper-slide">
+  <a href="https://ncics.org/" target="_blank">
+    <div class="blog-slider__img">
+      <img src="https://ncics.org/wp-content/themes/ncics/img/NCICS_logo-560x292.png" alt="North Carolina Institute for Climate Studies">
+    </div>    
+  </a>  
+  <div class="blog-slider__content">
+    <span class="blog-slider__code">July 2023 - Present</span>
+    <div class="blog-slider__title">Cloud Engineer Intern</div>  
+      <a href="https://ncics.org/" target="_blank">
+        <span class="blog-slider__code">North Carolina Institute for Climate Studies</span>
+      </a>
+    
+      <div class="blog-slider__text">
+        <li><b>ETL Pipeline Optimization:</b> Built and optimized ETL pipelines for SPI computation using AWS services.</li>
+        <li><b>Performance Enhancement:</b> Reduced data processing time by 60% through advanced data processing techniques.</li>
+        <li><b>Automation with IaC:</b> Automated SPI data pipeline using Infrastructure as Code and event-driven architecture on AWS.</li>
+      </div>
+      
+    <a href="https://1drv.ms/b/s!Aj4xuMQm7DHagoI1lPpWRaB1RQRBeA?e=nO5zg6" class="blog-slider__button" target="_blank">READ MORE</a>
+  </div>
+</div>
+
+<!--2-->
+<div class="blog-slider__item swiper-slide">
+  <a href="https://www.seagate.com/" target="_blank">
+    <div class="blog-slider__img">
+      <img src="https://riverridge.co.uk/app/uploads/2017/04/logo-seagate.jpg" alt="Seagate Technology">
+    </div>    
+  </a>  
+  <div class="blog-slider__content">
+    <span class="blog-slider__code">July 2019 - July 2022</span>
+    <div class="blog-slider__title">Software Engineer II</div>  
+      <a href="https://www.seagate.com/" target="_blank">
+        <span class="blog-slider__code">Seagate Technology</span>
+      </a>
+    
+      <div class="blog-slider__text">
+        <li><b>Test Automation Leadership:</b> Led test automation initiatives with an 8-person global team.</li>
+        <li><b>Framework Development:</b> Developed and expanded a test automation framework for testing Storage Arrays.</li>
+        <li><b>Efficiency Improvement:</b> Achieved a 37% reduction in test time by automating over 60% of test cases.</li>
+        <li><b>CI Pipeline Implementation:</b> Implemented a dedicated CI pipeline using Jenkins to reduce critical bug escapes.</li>
+      </div>
+      
+    <a href="https://1drv.ms/b/s!Aj4xuMQm7DHagoI1lPpWRaB1RQRBeA?e=nO5zg6" class="blog-slider__button" target="_blank">READ MORE</a>  </div>
+</div>
+
+
+
+</div>
+<div class="blog-slider__pagination"></div>
+</div>
+</section>
+<!-- End Experiences Section -->
+    <!-- End Experiences Section -->
 
     <!-- ======= Projects Section ======= -->
-    <section id="projects" class="portfolio-mf sect-pt4 route">
+
+    <!-- <section id="projects" class="portfolio-mf sect-pt4 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -389,84 +461,129 @@
           </div>
         </div>
       </div>
-    </section><!-- End Projects Section -->
+    </section>
+     -->
+<!-- End Projects Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <h5 class="title-left">
-                  Send Message
-                </h5>
-              </div>
-              <div>
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12 text-center my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                      <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="title-box-2 pt-4 pt-md-0">
-                <h5 class="title-left">
-                  Get in Touch
-                </h5>
-              </div>
-              <div class="more-info">
-                <p class="lead">
-                  I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project, have any questions, or just want to connect!
-                </p>
-                <ul class="list-ico">
-                  <li><span class="bi bi-geo-alt"></span> Raleigh, NC 27606</li>
-                  <li><span class="bi bi-envelope"></span> tejas.prabhu.career@gmail.com</li>
-                </ul>
-              </div>
-              <div class="socials">
-                <ul>
-                  <li><a href="https://linkedin.com/in/tejasprabhu"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                  <li><a href="https://github.com/TejasPrabhu"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+<!-- ======= Projects Section ======= -->
+<section id="projects" class="portfolio-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <!-- Section Title -->
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Projects</h3>
+          <p class="subtitle-a">Showcasing my technical expertise</p>
+          <div class="line-mf"></div>
         </div>
       </div>
     </div>
+
+    <!-- Projects Row -->
+    <div class="row">
+      <!-- Project 1: GopherStore -->
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="https://github.com/TejasPrabhu/GopherStore" target="_blank">
+            <div class="work-img">
+              <img src="assets/img/gopherstore.jpg" alt="GopherStore" class="img-fluid">
+            </div>
+            <div class="work-content text-center">
+              <h2 class="w-title">GopherStore</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Go, TCP/IP, GZIP Compression</span>
+              </div>
+              <p class="w-description">
+                Developed a peer-to-peer file storage system with efficient data transfer using TCP/IP and GZIP compression.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2: Ironclad -->
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="https://github.com/TejasPrabhu/Ironclad" target="_blank">
+            <div class="work-img">
+              <img src="assets/img/ironclad.jpg" alt="Ironclad" class="img-fluid">
+            </div>
+            <div class="work-content text-center">
+              <h2 class="w-title">Ironclad</h2>
+              <div class="w-more">
+                <span class="w-ctegory">AWS, Terraform, Ansible, Docker, Kubernetes, Jenkins, SonarQube</span>
+              </div>
+              <p class="w-description">
+                Architected a comprehensive CI/CD environment on AWS, including infrastructure provisioning and pipeline automation for a Java application.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3: BrewOps -->
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="https://github.com/TejasPrabhu/BrewOps" target="_blank">
+            <div class="work-img">
+              <img src="assets/img/brewops.jpg" alt="BrewOps" class="img-fluid">
+            </div>
+            <div class="work-content text-center">
+              <h2 class="w-title">BrewOps</h2>
+              <div class="w-more">
+                <span class="w-ctegory">GitHub Actions, Trivy, Docker, Kubernetes, Amazon EKS</span>
+              </div>
+              <p class="w-description">
+                Designed a CI/CD pipeline with GitHub Actions, automating builds, tests, security scans, and Kubernetes deployments on Amazon EKS.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4: TranscoderX -->
+      <div class="col-md-6">
+        <div class="work-box">
+          <a href="https://github.com/TejasPrabhu/TranscoderX" target="_blank">
+            <div class="work-img">
+              <img src="assets/img/transcoderx.jpg" alt="TranscoderX" class="img-fluid">
+            </div>
+            <div class="work-content text-center">
+              <h2 class="w-title">TranscoderX</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Python, Flask, MongoDB, PostgreSQL, Docker, Kubernetes, React, EKS</span>
+              </div>
+              <p class="w-description">
+                Built and deployed an event-driven microservices platform for video-to-audio conversion on AWS EKS, ensuring scalability and efficiency.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5: Donatify -->
+      <div class="col-md-6">
+        <div class="work-box">
+          <a href="https://github.com/TejasPrabhu/Donatify" target="_blank">
+            <div class="work-img">
+              <img src="assets/img/donatify.jpg" alt="Donatify" class="img-fluid">
+            </div>
+            <div class="work-content text-center">
+              <h2 class="w-title">Donatify</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Python, Flask, PostgreSQL, React, JavaScript, HTML, CSS</span>
+              </div>
+              <p class="w-description">
+                Developed a donation platform with user authentication, product filtering, inventory management, and CI for seamless operation.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
-</section> -->
+</section>
 
 
 <!-- Contact Section -->
@@ -512,7 +629,9 @@
   </div>
 </section>
 
-</main><!-- End #main -->
+</main>
+
+<!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer>
@@ -525,7 +644,9 @@
   </div>
 </div>
 </div>
-</footer><!-- End  Footer -->
+</footer>
+
+<!-- End  Footer -->
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

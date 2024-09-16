@@ -330,3 +330,42 @@ footer {
     flex-direction: column;
   }
 }
+
+
+.work-box {
+  margin-bottom: 30px;
+}
+
+.work-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-img img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.work-img:hover img {
+  transform: scale(1.1);
+}
+
+.work-content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.w-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.w-more {
+  margin-bottom: 15px;
+}
+
+.w-description {
+  font-size: 14px;
+  color: #666;
+}
