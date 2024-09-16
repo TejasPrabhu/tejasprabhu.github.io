@@ -382,267 +382,6 @@ footer {
 }
 
 /* Experiences Section */
-.experience-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.company-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 2rem;
-}
-
-.company-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.experience-details {
-  flex: 1;
-}
-
-.experience-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.experience-company {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 0.5rem;
-}
-
-.experience-date {
-  font-size: 1rem;
-  color: #888;
-  margin-bottom: 1rem;
-}
-
-.experience-description {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.experience-description ul {
-  padding-left: 1.5rem;
-}
-
-.read-more-btn {
-  background-color: #0078ff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
-
-.read-more-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Projects Section */
-.project-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-
-.project-img {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.project-content {
-  padding: 1.5rem;
-}
-
-.project-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.project-description {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.project-tech {
-  font-size: 0.9rem;
-  color: #888;
-}
-
-
-
-/* Experiences Section Styles */
-.blog-slider {
-  width: 95%;
-  position: relative;
-  max-width: 950px;
-  margin: auto;
-  background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 25px;
-  border-radius: 25px;
-  height: 400px;
-  transition: all 0.3s;
-}
-
-.blog-slider__item {
-  display: flex;
-  align-items: center;
-}
-
-.blog-slider__img {
-  width: 300px;
-  flex-shrink: 0;
-  height: 300px;
-  border-radius: 20px;
-  transform: translateX(-80px);
-  overflow: hidden;
-}
-
-.blog-slider__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-
-.blog-slider__content {
-  padding-right: 25px;
-}
-
-.blog-slider__title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #0d0925;
-  margin-bottom: 20px;
-}
-
-.blog-slider__code {
-  color: #7b7992;
-  margin-bottom: 15px;
-  display: block;
-  font-weight: 500;
-}
-
-.blog-slider__text {
-  color: #4e4a67;
-  margin-bottom: 30px;
-  line-height: 1.5em;
-}
-
-.blog-slider__button {
-  display: inline-flex;
-  background-image: linear-gradient(147deg, #939185 0%, #2F3645 74%);
-  padding: 15px 35px;
-  border-radius: 50px;
-  color: #fff;
-  box-shadow: 0px 14px 80px rgba(147, 145, 133, 0.4);
-  text-decoration: none;
-  font-weight: 500;
-  justify-content: center;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-/* Slider Pagination Styles */
-.blog-slider__pagination {
-  position: absolute;
-  z-index: 21;
-  right: 20px;
-  width: 11px !important;
-  text-align: center;
-  left: auto !important;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.blog-slider__pagination .swiper-pagination-bullet {
-  width: 11px;
-  height: 11px;
-  display: block;
-  border-radius: 10px;
-  background: #2F3645;
-  opacity: 0.2;
-  transition: all 0.3s;
-}
-
-.blog-slider__pagination .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #2F3645;
-  height: 30px;
-  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 992px) {
-  .blog-slider {
-    max-width: 680px;
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .blog-slider {
-    min-height: 500px;
-    height: auto;
-    margin: 180px auto;
-  }
-  
-  .blog-slider__item {
-    flex-direction: column;
-  }
-  
-  .blog-slider__img {
-    transform: translateY(-50%);
-    width: 90%;
-  }
-  
-  .blog-slider__content {
-    margin-top: -80px;
-    text-align: center;
-    padding: 0 30px;
-  }
-  
-  .blog-slider__pagination {
-    transform: translateX(-50%);
-    left: 50% !important;
-    top: 205px;
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .experiences-section {
   padding: 80px 0;
   background-color: #f8f9fa;
@@ -680,6 +419,18 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  position: relative;
+}
+
+.experience-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.experience-link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .company-logo {
@@ -739,10 +490,20 @@ footer {
   border-radius: 5px;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .read-more-btn:hover {
   background-color: #0056b3;
+}
+
+.experience-link:hover .job-title,
+.experience-link:hover .company-name,
+.experience-link:hover .job-duration,
+.experience-link:hover .job-description {
+  color: inherit;
 }
 
 @media (max-width: 768px) {
@@ -765,5 +526,81 @@ footer {
   
   .job-description li {
     font-size: 0.9rem;
+  }
+  
+  .read-more-btn {
+    position: static;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }
