@@ -333,41 +333,30 @@ footer {
 
 
 .work-box {
-  margin-bottom: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-img {
-  position: relative;
+  height: 200px; /* Set a fixed height for all images */
   overflow: hidden;
 }
 
 .work-img img {
   width: 100%;
-  transition: transform 0.5s;
-}
-
-.work-img:hover img {
-  transform: scale(1.1);
+  height: 100%;
+  object-fit: cover; /* This will ensure the image covers the area without distortion */
 }
 
 .work-content {
-  padding: 20px;
-  background-color: #fff;
-}
-
-.w-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.w-more {
-  margin-bottom: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .w-description {
-  font-size: 14px;
-  color: #666;
+  flex-grow: 1;
 }
 
 
@@ -597,6 +586,57 @@ footer {
   font-size: 0.9rem;
   color: #888;
   margin-top: auto;
+}
+
+.read-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0078ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.company-logo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 30px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content p {
+  color: #333; /* Darker text color for better readability */
+  font-size: 1.1rem; /* Slightly larger font size */
+  line-height: 1.6; /* Increased line height for better readability */
 }
 
 @media (max-width: 768px) {
