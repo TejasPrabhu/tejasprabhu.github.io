@@ -100,14 +100,14 @@ a:hover {
 }
 
 .hero-container {
-  text-align: center;
-  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #hero h1 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #hero p {
@@ -116,24 +116,23 @@ a:hover {
 }
 
 .hero-description {
-  max-width: 600px;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
 }
 
-.hero-cta a {
-  font-size: 18px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+.specializations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.hero-cta a:hover {
-  background: #fff;
-  color: #1a1a2e;
+.badge {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
 
 /* About Section */
@@ -254,25 +253,43 @@ a:hover {
 }
 
 /* Contact Section */
-#contact {
-  background: linear-gradient(45deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  background-size: 200% 200%;
-  animation: gradientBG 15s ease infinite;
-  color: #fff;
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
 }
 
-#contact h2, #contact p, #contact label {
-  color: #fff;
+.section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #1a1a2e;
+}
+
+.contact-info i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #0078ff;
+}
+
+.social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #0078ff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0056b3;
 }
 
 .php-email-form .form-control {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-}
-
-.php-email-form input, .php-email-form textarea {
   padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  color: #212529;
 }
 
 .php-email-form button[type="submit"] {
