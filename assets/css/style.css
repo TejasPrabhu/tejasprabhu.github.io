@@ -20,6 +20,17 @@ p {
   color: #666;
 }
 
+/* General reset for a tags */
+a {
+  color: inherit; /* This ensures the link takes on the color of the surrounding text */
+  text-decoration: none; /* This removes the underline by default */
+}
+
+a:hover {
+  color: inherit; /* The link color won't change on hover */
+  text-decoration: underline; /* You can control whether or not you want the underline to appear on hover */
+}
+
 /* Navbar */
 #navbar ul {
   list-style: none;
