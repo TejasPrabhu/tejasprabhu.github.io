@@ -26,9 +26,9 @@ p {
   transition: 0.3s;
 } */
 
-a:hover {
+/* a:hover {
   color: #0056b3;
-}
+} */
 
 /* Navbar */
 #navbar ul {
@@ -172,7 +172,7 @@ a:hover {
 
 .skill-category h3 {
   font-size: 1.8rem;
-  color: #0078ff;
+  /* color: #0078ff; */
   margin-bottom: 15px;
 }
 
@@ -191,7 +191,7 @@ a:hover {
 .skill-list li i {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #0078ff;
+  /* color: #0078ff; */
 }
 
 /* Projects Section */
@@ -263,9 +263,8 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.experience-item h3 {
+.experience-item {
   font-size: 1.5rem;
-  color: #0078ff;
 }
 
 .experience-item p {
@@ -302,9 +301,9 @@ a:hover {
   margin: 10px 0;
 }
 
-.social-links a {
+.social-links {
   font-size: 1.5rem;
-  color: #0078ff;
+  /* color: #0078ff; */
   margin: 0 10px;
 }
 
@@ -352,7 +351,7 @@ footer p {
   bottom: 0;
   width: 100%;
   height: 4px; /* Thickness of the underline */
-  background-color: #0078ff; /* Color of the underline */
+  background-color: linear-gradient(45deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   border-radius: 2px;
   transition: width 0.4s ease; /* Smooth effect for underline */
 }
