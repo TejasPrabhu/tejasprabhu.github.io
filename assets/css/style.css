@@ -20,16 +20,6 @@ p {
   color: #666;
 }
 
-/* a {
-  color: #333;
-  text-decoration: none;
-  transition: 0.3s;
-} */
-
-/* a:hover {
-  color: #0056b3;
-} */
-
 /* Navbar */
 #navbar ul {
   list-style: none;
@@ -172,7 +162,6 @@ p {
 
 .skill-category h3 {
   font-size: 1.8rem;
-  /* color: #0078ff; */
   margin-bottom: 15px;
 }
 
@@ -191,7 +180,6 @@ p {
 .skill-list li i {
   margin-right: 10px;
   font-size: 1.5rem;
-  /* color: #0078ff; */
 }
 
 /* Projects Section */
@@ -200,7 +188,8 @@ p {
 }
 
 #projects .title-box {
-  margin-bottom: 50px;
+  margin-bottom: 20px; /* Reduced margin for cleaner appearance */
+  padding-top: 20px; /* Reduced padding */
 }
 
 .project-card {
@@ -303,7 +292,6 @@ p {
 
 .social-links {
   font-size: 1.5rem;
-  /* color: #0078ff; */
   margin: 0 10px;
 }
 
@@ -326,42 +314,43 @@ footer p {
 
 /* Style for the title box */
 .title-box {
-  margin-bottom: 50px; /* Adding space below the title box for separation */
-  padding-top: 40px; /* Adding space above for breathing room */
+  margin-bottom: 20px; /* Reduced margin for cleaner appearance */
+  padding-top: 20px; /* Reduced padding */
 }
 
-/* Style for the h2 section title */
+/* Section Title Styling */
 .title-box .section-title {
-  font-size: 2.5rem; /* Large size for visibility */
-  font-weight: 700; /* Bold */
-  text-transform: uppercase; /* Uppercase for emphasis */
-  letter-spacing: 2px; /* Slightly spaced out letters */
-  color: #0e0303; /* Dark text color for contrast */
-  margin-bottom: 10px; /* Space between title and subtitle */
+  font-size: 2rem; /* Moderate size */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 10px; /* Tighter spacing */
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 5px; /* Slightly smaller padding */
 }
 
-/* Adding the underline effect for h2 */
+/* Underline for Title */
 .title-box .section-title::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4px; /* Thickness of the underline */
-  background-color: linear-gradient(45deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  border-radius: 2px;
-  transition: width 0.4s ease; /* Smooth effect for underline */
+  height: 2px;
+  background-color: #333; /* Black underline */
+  border-radius: 1px;
 }
 
-/* Subtitle under h2 */
+/* Section Subtitle Styling */
 .title-box .section-subtitle {
-  font-size: 1.1rem; /* Slightly smaller for subtitle */
-  font-weight: 400; /* Normal weight */
-  color: #4e4e4e; /* Slightly muted text color */
-  margin-top: 10px; /* Space above the subtitle */
+  font-size: 1rem; /* Slightly smaller subtitle */
+  font-weight: 400;
+  color: #666; /* Grey for subtitles */
+  margin-top: 5px; /* Reduced margin */
+  text-transform: none;
+  letter-spacing: 0.5px; /* Slightly spaced out */
 }
 
 /* Adding hover effect to enlarge underline on h2 hover */
@@ -373,7 +362,6 @@ footer p {
 .title-box.text-center {
   text-align: center;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
