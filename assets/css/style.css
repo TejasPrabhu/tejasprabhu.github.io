@@ -30,7 +30,7 @@ a {
 
 /* Global Section Spacing */
 section {
-  padding: 20px 0;
+  padding: 40px 0; /* Adjusted padding to make sections more compact */
   margin: 10px 0;
 }
 
@@ -68,7 +68,7 @@ section {
   padding: 20px 0;
 }
 
-/* Fixing Hero Section */
+/* Hero Section */
 #hero {
   width: 100%;
   height: 100vh;
@@ -148,20 +148,20 @@ section {
 
 /* Title Box Styling */
 .title-box {
-  margin-bottom: 50px;
-  padding-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 .title-box .section-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: #0e0303;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .title-box .section-title::after {
@@ -176,42 +176,59 @@ section {
 }
 
 .title-box .section-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #4e4e4e;
 }
 
 /* About Section */
+/* For larger screens */
 .about-mf {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: left; /* Align text to the left for better readability */
 }
 
 .about-mf .about-img img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 180px; /* Adjusted size */
+  height: 180px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-mf p {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 20px 0;
+.about-mf .about-text {
+  max-width: 60%; /* Ensures it doesn't span the entire width */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .about-mf {
+    flex-direction: column; /* Stack image and text on mobile */
+    text-align: center; /* Center-align on smaller screens */
+  }
+  .about-mf .about-img {
+    margin-bottom: 20px; /* Add space between image and text */
+  }
+  .about-mf .about-text {
+    max-width: 100%; /* Full-width text on mobile */
+  }
 }
 
 /* Skills Section */
 .skills-container {
   display: flex;
   justify-content: space-around;
-  margin: 40px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
 .skill-category {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   background: #fff;
   margin: 10px;
   text-align: left;
@@ -243,11 +260,11 @@ section {
 
 /* Projects Section */
 #projects {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .projects-container {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .project-card {
@@ -311,7 +328,7 @@ section {
 
 /* Experience Section */
 #experiences {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .experiences-container {
@@ -323,7 +340,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -359,7 +376,7 @@ section {
 
 /* Contact Section */
 #contact {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .contact-info {
