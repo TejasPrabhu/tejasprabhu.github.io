@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   color: #333;
@@ -20,15 +21,22 @@ p {
   color: #666;
 }
 
-/* General reset for a tags */
 a {
-  color: #333; /* This ensures the link takes on the color of the surrounding text */
-  text-decoration: none; /* This removes the underline by default */
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
 }
 
-a:hover {
-  color: #333; /* The link color won't change on hover */
-  text-decoration: underline; /* You can control whether or not you want the underline to appear on hover */
+/* Global Section Spacing */
+section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* Navbar */
@@ -133,9 +141,44 @@ a:hover {
   color: #0078ff;
 }
 
+/* Title Box Styling */
+.title-box {
+  margin-bottom: 50px;
+  padding-top: 40px;
+}
+
+.title-box .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0e0303;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.title-box .section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #0e0303;
+  border-radius: 2px;
+}
+
+.title-box .section-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #4e4e4e;
+}
+
 /* About Section */
 .about-mf {
-  padding: 60px 0;
   text-align: center;
 }
 
@@ -198,9 +241,8 @@ a:hover {
   padding: 60px 0;
 }
 
-#projects .title-box {
-  margin-bottom: 20px; /* Reduced margin for cleaner appearance */
-  padding-top: 20px; /* Reduced padding */
+.projects-container {
+  margin-top: 30px;
 }
 
 .project-card {
@@ -211,6 +253,20 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: none;
 }
 
 .project-card .work-img {
@@ -233,7 +289,6 @@ a:hover {
 
 .project-card .work-title {
   font-size: 1.5rem;
-  color: #333;
   margin-bottom: 10px;
 }
 
@@ -243,28 +298,43 @@ a:hover {
   flex-grow: 1;
 }
 
+.project-card .w-category {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: auto;
+}
+
 /* Experience Section */
 #experiences {
   padding: 60px 0;
-  background-color: #f8f9fa;
 }
 
 .experiences-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  margin-top: 30px;
 }
 
 .experience-item {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-item {
+.experience-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item .company-logo img {
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.experience-item h3 {
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .experience-item p {
@@ -280,11 +350,6 @@ a:hover {
 .experience-item ul li {
   font-size: 1rem;
   margin-bottom: 10px;
-}
-
-.company-logo img {
-  max-width: 100px;
-  border-radius: 5px;
 }
 
 /* Contact Section */
@@ -323,55 +388,11 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Style for the title box */
-.title-box {
-  margin-bottom: 20px; /* Reduced margin for cleaner appearance */
-  padding-top: 20px; /* Reduced padding */
-}
-
-/* Section Title Styling */
-.title-box .section-title {
-  font-size: 2rem; /* Moderate size */
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #333;
-  margin-bottom: 10px; /* Tighter spacing */
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px; /* Slightly smaller padding */
-}
-
-/* Underline for Title */
-.title-box .section-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #333; /* Black underline */
-  border-radius: 1px;
-}
-
-/* Section Subtitle Styling */
-.title-box .section-subtitle {
-  font-size: 1rem; /* Slightly smaller subtitle */
-  font-weight: 400;
-  color: #666; /* Grey for subtitles */
-  margin-top: 5px; /* Reduced margin */
-  text-transform: none;
-  letter-spacing: 0.5px; /* Slightly spaced out */
-}
-
-/* Adding hover effect to enlarge underline on h2 hover */
-.title-box .section-title:hover::after {
-  width: 120%; /* Expanding the underline on hover */
-}
-
-/* Ensuring the text is centered */
-.title-box.text-center {
-  text-align: center;
+/* Animations */
+.project-card:active,
+.experience-item:active {
+  transform: scale(0.98);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
