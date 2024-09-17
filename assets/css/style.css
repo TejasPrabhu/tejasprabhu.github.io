@@ -29,7 +29,8 @@ a {
 
 /* Global Section Spacing */
 section {
-  padding: 60px 0;
+  padding: 20px 0;
+  margin: 10px 0;
 }
 
 .container {
@@ -395,6 +396,15 @@ footer p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+
+.logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-container {
