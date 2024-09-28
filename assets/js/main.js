@@ -234,6 +234,48 @@ Fonts - Google Fonts
 */
 
 document.addEventListener('DOMContentLoaded', function() {
+  var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  var header = document.querySelector('#header');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var targetId = this.getAttribute('href');
+      var targetSection = document.querySelector(targetId);
+      
+      if (targetSection) {
+        // Close the mobile menu if it's open
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          navbarCollapse.classList.remove('show');
+        }
+
+        // Wait for the menu to close before scrolling
+        setTimeout(function() {
+          // Get the height of the header
+          var headerHeight = header.offsetHeight;
+          
+          // Calculate the target position
+          var targetPosition = targetSection.offsetTop - headerHeight;
+          
+          // For the contact section, ensure it's at the top
+          if (targetId === '#contact') {
+            targetPosition = targetSection.offsetTop - headerHeight - 1; // Subtract 1px to ensure it's just below the header
+          }
+          
+          // Smooth scroll to the adjusted position
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }, 300); // Adjust this delay if needed
+      }
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
   var swiper = new Swiper('.blog-slider', {
     spaceBetween: 30,
     effect: 'fade',
@@ -241,34 +283,12 @@ document.addEventListener('DOMContentLoaded', function() {
     mousewheel: {
       invert: false,
     },
+    // autoHeight: true,
     pagination: {
       el: '.blog-slider__pagination',
       clickable: true,
     }
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  new Typed('.typed', {
-    strings: ['Software Engineer', 'DevOps Enthusiast', 'Cloud Specialist'],
-    loop: true,
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 2000
-  });
-});
-
-var swiper = new Swiper('.blog-slider', {
-  spaceBetween: 30,
-  effect: 'fade',
-  loop: true,
-  mousewheel: {
-    invert: false,
-  },
-  pagination: {
-    el: '.blog-slider__pagination',
-    clickable: true,
-  }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -285,3 +305,4 @@ document.addEventListener('DOMContentLoaded', function() {
     },
   });
 });
+

@@ -40,16 +40,18 @@ a {
 }
 
 /* Global Section Spacing */
-section {
-  padding: 80px 0; /* Increased padding for sections */
-}
+/* section {
+  padding: 40px 0; /* Increased padding for sections */
+  /* padding-top: 40px;  */
+/* }  */
+
 
 .container {
   max-width: 1400px; /* Increased max-width to use more horizontal space */
   width: 95%; /* Use 95% of the screen width */
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 /* Navbar */
@@ -90,7 +92,7 @@ section {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 120px; /* Adjust this value based on your navbar height */
+  /* padding-top: 100px; */
   box-sizing: border-box;
 }
 
@@ -204,9 +206,9 @@ section {
 }
 
 /* About Section for Larger Screens */
-.about-mf {
+/* .about-mf {
   padding: 80px 0;
-}
+} */
 
 .about-content {
   display: flex;
@@ -287,9 +289,9 @@ section {
 }
 
 /* Projects Section */
-#projects {
+/* #projects {
   padding: 50px 0;
-}
+} */
 
 .project-card {
   background-color: #fff;
@@ -350,58 +352,87 @@ section {
   margin-top: auto;
 }
 
-/* Experience Section */
-#experiences {
-  padding: 50px 0;
-}
-
-.experiences-container {
-  margin-top: 30px;
-}
-
 .experience-item {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
+  padding: 30px;
   margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.experience-item .company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .experience-item .company-logo img {
-  max-width: 100px;
-  border-radius: 5px;
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 .experience-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-.experience-item p {
+.experience-item h4 {
+  font-size: 1.4rem;
   color: #666;
+  margin-bottom: 5px;
+}
+
+.experience-item p.text-muted {
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 .experience-item ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .experience-item ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.experience-item ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+
+
+@media (max-width: 767px) {
+  .experience-item .company-logo {
+    margin-bottom: 20px;
+  }
+  
+  .experience-item h3 {
+    font-size: 1.6rem;
+  }
+  
+  .experience-item h4 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Contact Section */
-#contact {
+/* #contact {
   padding: 80px 0;
-}
+} */
 
 .contact-info {
   margin-bottom: 30px;
@@ -538,12 +569,51 @@ footer p {
   }
 }
 
-/* Hero Section adjustments */
-#hero {
-  padding-top: 120px; /* Adjust this value based on your navbar height */
+
+
+#contact {
+  /* Remove or comment out the min-height property */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Change from center to flex-start */
+
 }
 
-/* Adjust other sections if needed */
-section {
-  padding: 80px 0; /* Increased padding for sections */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 60px; /* Adjust for smaller screens if needed */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact .contact-info {
+  text-align: center;
+}
+
+#contact .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#contact .social-links a {
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #0078ff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .social-links a:hover {
+  background: #0078ff;
+  color: #fff;
 }
