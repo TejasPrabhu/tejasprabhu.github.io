@@ -1,4 +1,15 @@
 /* General Styles */
+/* body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden; /* Already present */
+  /* position: relative;
+} */ */
+
+/* General Styles */
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f8f9fa;
@@ -30,12 +41,12 @@ a {
 
 /* Global Section Spacing */
 section {
-  padding: 40px 0; /* Adjusted padding to make sections more compact */
-  margin: 10px 0;
+  padding: 80px 0; /* Increased padding for sections */
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1400px; /* Increased max-width to use more horizontal space */
+  width: 95%; /* Use 95% of the screen width */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -61,11 +72,12 @@ section {
 }
 
 #header {
-  background-color: rgba(0, 0, 0, 0.9); /* Non-opaque */
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
   position: fixed;
   width: 100%;
-  z-index: 1000;
-  padding: 20px 0;
+  z-index: 997;
+  padding: 20px 0; /* Increased padding */
+  transition: all 0.5s;
 }
 
 /* Hero Section */
@@ -78,8 +90,15 @@ section {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 100px; /* Adjusting padding to avoid content going under navbar */
-  box-sizing: border-box; /* Fixes the content issue */
+  padding-top: 120px; /* Adjust this value based on your navbar height */
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+#hero .hero-container {
+  max-width: 1140px; /* This should match your navbar's container width */
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 #hero h1 {
@@ -93,8 +112,10 @@ section {
 }
 
 .hero-description {
+  max-width: 800px;
   font-size: 1.25rem;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin: 0 auto;
   color: #fff;
 }
 
@@ -149,7 +170,7 @@ section {
 /* Title Box Styling */
 .title-box {
   margin-bottom: 30px;
-  padding-top: 20px;
+  padding-top: 30px; /* Adjust this value as needed */
 }
 
 .title-box .section-title {
@@ -182,39 +203,46 @@ section {
   color: #4e4e4e;
 }
 
-/* About Section */
-/* For larger screens */
+/* About Section for Larger Screens */
 .about-mf {
+  padding: 80px 0;
+}
+
+.about-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  text-align: left; /* Align text to the left for better readability */
+  text-align: center;
 }
 
-.about-mf .about-img img {
+.about-img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
   border-radius: 50%;
-  width: 180px; /* Adjusted size */
-  height: 180px;
+  margin: 0 auto 30px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-mf .about-text {
-  max-width: 60%; /* Ensures it doesn't span the entire width */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* For smaller screens */
+.about-text p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
-  .about-mf {
-    flex-direction: column; /* Stack image and text on mobile */
-    text-align: center; /* Center-align on smaller screens */
-  }
-  .about-mf .about-img {
-    margin-bottom: 20px; /* Add space between image and text */
-  }
-  .about-mf .about-text {
-    max-width: 100%; /* Full-width text on mobile */
+  .about-img {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -222,7 +250,7 @@ section {
 .skills-container {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0;
+  /* margin: 50px 0; */
   text-align: center;
 }
 
@@ -261,10 +289,6 @@ section {
 /* Projects Section */
 #projects {
   padding: 50px 0;
-}
-
-.projects-container {
-  margin-top: 20px;
 }
 
 .project-card {
@@ -376,7 +400,7 @@ section {
 
 /* Contact Section */
 #contact {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .contact-info {
@@ -455,4 +479,71 @@ footer p {
   .specializations {
     flex-direction: row;
   }
+}
+
+/* Navbar Styles */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
+  padding: 10px 0; /* Reduced padding */
+}
+
+.navbar {
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px; /* Increased max-width to use more horizontal space */
+  width: 95%; /* Use 95% of the screen width */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Reduced font size */
+  font-weight: 700;
+  color: #fff; /* Ensure the brand is white */
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 15px; /* Reduced padding */
+  font-size: 1rem; /* Reduced font size */
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0078ff; /* Keep the hover/active color */
+}
+
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5); /* Lighter border for the toggler */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* This creates a white hamburger icon */
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background for mobile menu */
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 15px 20px; /* Increased padding for touch targets */
+  }
+}
+
+/* Hero Section adjustments */
+#hero {
+  padding-top: 120px; /* Adjust this value based on your navbar height */
+}
+
+/* Adjust other sections if needed */
+section {
+  padding: 80px 0; /* Increased padding for sections */
 }
