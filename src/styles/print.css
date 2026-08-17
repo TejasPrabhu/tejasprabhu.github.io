@@ -1,0 +1,63 @@
+/* --------------------------------------------------------------------------
+   Print. This is a courtesy stylesheet for whoever hits Ctrl/Cmd+P on the
+   page as it stands — chrome hidden, light palette forced so it doesn't burn
+   a page of dark background. It is not trying to stand in for a résumé; for
+   full detail send people to LinkedIn or a PDF.
+-------------------------------------------------------------------------- */
+
+@media print {
+  /* [data-theme] is an attribute selector and outranks a bare :root, so all
+     three must be listed — otherwise printing while in dark mode produces a
+     page of near-white text. */
+  :root,
+  :root[data-theme="light"],
+  :root[data-theme="dark"] {
+    --bg: #ffffff;
+    --bg-subtle: #ffffff;
+    --surface: #ffffff;
+    --surface-hover: #ffffff;
+    --border: #cccccc;
+    --border-strong: #999999;
+    --text: #000000;
+    --text-muted: #333333;
+    --accent: #000000;
+    --shadow: none;
+  }
+
+  .site-header,
+  .site-footer,
+  .theme-toggle,
+  .copy-btn,
+  .intro-actions,
+  .contact-actions,
+  .skip-link {
+    display: none !important;
+  }
+
+  body {
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+
+  .section,
+  .company,
+  .project,
+  .entry,
+  .role {
+    break-inside: avoid;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

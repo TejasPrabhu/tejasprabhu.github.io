@@ -1,0 +1,30 @@
+{
+  "name": "tejasprabhu.github.io",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal site for Tejas Prabhu, generated from a single content file.",
+  "homepage": "https://tejasprabhu.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejasPrabhu/tejasprabhu.github.io.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "python3 -m http.server 4173 --directory dist",
+    "dev": "npm run build && npm run serve",
+    "lint:html": "html-validate dist/index.html",
+    "lint:links": "linkinator dist --recurse --silent --skip \"^https://www\\.linkedin\\.com\" --skip \"^https://tejasprabhu\\.com\"",
+    "check": "npm run build && npm run lint:html && npm run lint:links",
+    "images": "node scripts/images.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "^8.24.2",
+    "linkinator": "^6.1.2",
+    "sharp": "^0.34.2"
+  }
+}

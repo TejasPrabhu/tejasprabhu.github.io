@@ -1,0 +1,664 @@
+/* --------------------------------------------------------------------------
+   Header
+-------------------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-height);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: saturate(150%) blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.site-header[data-scrolled="true"] {
+  border-bottom-color: var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  height: 100%;
+}
+
+.brand {
+  color: var(--text);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+.site-nav {
+  margin-left: auto;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.site-nav a {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  font-weight: 550;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+  background: var(--bg-subtle);
+}
+
+.site-nav a[aria-current="true"] {
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+/* Without JS the toggle cannot do anything, so it is not rendered at all.
+   The inline head script adds `.js` before first paint. */
+.theme-toggle {
+  display: none;
+}
+
+.js .theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.theme-toggle svg {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+
+/* The icon shows the theme a click would switch *to*. The script always
+   resolves data-theme to an explicit "light" or "dark", so one rule each. */
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+@media (max-width: 44rem) {
+  .site-nav {
+    display: none;
+  }
+
+  .theme-toggle {
+    margin-left: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Intro
+-------------------------------------------------------------------------- */
+
+.intro {
+  padding-block: var(--space-8) var(--space-7);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.intro h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: -0.03em;
+}
+
+.intro-meta {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+}
+
+.intro-tagline {
+  margin-top: var(--space-4);
+  max-width: var(--prose);
+  font-size: var(--text-lg);
+  color: var(--text);
+}
+
+.intro-summary {
+  margin-top: var(--space-5);
+  max-width: var(--prose);
+  display: grid;
+  gap: var(--space-4);
+  color: var(--text-muted);
+}
+
+.intro-photo {
+  display: block;
+  width: 9.5rem;
+}
+
+.intro-photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.intro-actions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (max-width: 44rem) {
+  .intro {
+    padding-block: var(--space-6) var(--space-6);
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .intro-photo {
+    width: 5.5rem;
+    order: -1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+-------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: var(--text-sm);
+  font-weight: 550;
+  white-space: nowrap;
+  transition: background var(--transition), border-color var(--transition),
+    color var(--transition);
+}
+
+.btn:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+  border-color: var(--text-muted);
+}
+
+.btn svg {
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--accent-contrast);
+}
+
+/* --------------------------------------------------------------------------
+   Sections
+-------------------------------------------------------------------------- */
+
+.section {
+  padding-block: var(--space-7);
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-head h2 {
+  font-size: var(--text-xl);
+  letter-spacing: -0.02em;
+}
+
+.section-note {
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Experience timeline
+-------------------------------------------------------------------------- */
+
+.company {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: var(--space-6);
+  padding-block: var(--space-6);
+}
+
+.company:first-child {
+  padding-top: 0;
+}
+
+.company + .company {
+  border-top: 1px solid var(--border);
+}
+
+.company-name {
+  font-size: var(--text-base);
+  font-weight: 650;
+}
+
+.company-name a {
+  color: var(--text);
+}
+
+.company-name a:hover {
+  color: var(--accent);
+}
+
+.company-meta {
+  margin-top: var(--space-2);
+  display: grid;
+  gap: var(--space-1);
+  color: var(--text-muted);
+}
+
+.roles {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.role-title {
+  font-size: var(--text-lg);
+}
+
+.role-dates {
+  margin-top: var(--space-1);
+  color: var(--text-muted);
+}
+
+.role-summary {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  max-width: var(--prose);
+}
+
+@media (max-width: 52rem) {
+  .company {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Projects
+-------------------------------------------------------------------------- */
+
+.projects {
+  display: grid;
+  /* min() keeps the track from forcing a horizontal scrollbar once the
+     viewport is narrower than the track's minimum. */
+  grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.project:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.project:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.project-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.project h3 {
+  font-size: var(--text-base);
+}
+
+.project h3 a {
+  color: var(--text);
+}
+
+/* The title link owns the whole card, so the card is one hit target and one
+   tab stop. */
+.project h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.project h3 a:focus-visible {
+  outline: none;
+}
+
+.project:hover h3 a {
+  color: var(--accent);
+}
+
+.project-blurb {
+  flex: 1;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag {
+  padding: 2px var(--space-2);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.project-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Skills and focus
+-------------------------------------------------------------------------- */
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.skill-groups {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.skill-group-label {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: var(--text-xs);
+}
+
+.skill-group .tags {
+  margin-top: var(--space-3);
+}
+
+.skill-group .tag {
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-3);
+  color: var(--text);
+}
+
+.focus {
+  padding: var(--space-5);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.focus h3 {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.focus ol {
+  margin-top: var(--space-4);
+  display: grid;
+  gap: var(--space-4);
+  counter-reset: focus;
+}
+
+.focus li {
+  counter-increment: focus;
+  padding-left: var(--space-6);
+  position: relative;
+}
+
+.focus li::before {
+  content: counter(focus, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent);
+}
+
+.focus-title {
+  font-weight: 600;
+}
+
+.focus-note {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+@media (max-width: 52rem) {
+  .skills-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Background: education, certifications, publications
+-------------------------------------------------------------------------- */
+
+.background-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.subhead {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.entries {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.entry-title {
+  font-size: var(--text-base);
+}
+
+.entry-detail {
+  color: var(--text-muted);
+}
+
+.entry-meta {
+  margin-top: var(--space-1);
+  color: var(--text-muted);
+}
+
+.cert-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cert-list li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.cert-code {
+  flex: none;
+  min-width: 3.75rem;
+  color: var(--text-muted);
+}
+
+.publications {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border);
+}
+
+/* --------------------------------------------------------------------------
+   Contact
+-------------------------------------------------------------------------- */
+
+.contact-body {
+  max-width: var(--prose);
+}
+
+.contact-email {
+  margin-top: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Long unbroken tokens — an email address, a repo URL — are the usual cause of
+   a page that scrolls sideways on a phone. */
+.contact-email a,
+.footer-inner a {
+  overflow-wrap: anywhere;
+}
+
+.contact-email a {
+  font-size: var(--text-lg);
+}
+
+@media (max-width: 26rem) {
+  .contact-email a {
+    font-size: var(--text-base);
+  }
+}
+
+.copy-btn {
+  display: grid;
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.copy-btn:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.copy-btn svg {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+
+.copy-btn .icon-check {
+  display: none;
+  color: var(--accent);
+}
+
+.copy-btn[data-copied="true"] .icon-check {
+  display: block;
+}
+
+.copy-btn[data-copied="true"] .icon-copy {
+  display: none;
+}
+
+.contact-actions {
+  margin-top: var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+-------------------------------------------------------------------------- */
+
+.site-footer {
+  margin-top: var(--space-7);
+  padding-block: var(--space-5);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
