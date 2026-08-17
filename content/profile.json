@@ -1,0 +1,324 @@
+{
+  "identity": {
+    "name": "Tejas Prabhu",
+    "role": "Software Engineer",
+    "company": "NetApp",
+    "location": "Research Triangle Park, NC",
+    "tagline": "Software engineer at NetApp, building full-stack tooling and asynchronous Python infrastructure for enterprise storage systems.",
+    "photo": {
+      "base": "img/headshot",
+      "width": 320,
+      "height": 320,
+      "alt": "Tejas Prabhu"
+    }
+  },
+
+  "links": {
+    "email": "tejas.prabhu.career@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/tejasprabhu",
+    "github": "https://github.com/TejasPrabhu",
+    "source": "https://github.com/TejasPrabhu/tejasprabhu.github.io",
+    "resume": null
+  },
+
+  "summary": [
+    "I build software for enterprise storage systems at NetApp — full-stack internal applications with FastAPI and Vue, LLM-powered developer tooling that turns unstructured system output into something engineers can act on, and asynchronous Python frameworks that drive high-concurrency workloads across multi-cluster storage environments.",
+    "My background is in the systems software that makes large-scale storage verifiable. At Seagate I built the frameworks and CI infrastructure other engineers depended on to ship firmware safely. At the North Carolina Institute for Climate Studies I built ETL pipelines on AWS for large-scale geospatial climate data, cutting processing time by 60%.",
+    "I work best where requirements shift and shipping something usable this week matters more than a perfect design next quarter."
+  ],
+
+  "focus": {
+    "heading": "Currently going deeper on",
+    "items": [
+      {
+        "title": "Distributed storage internals",
+        "note": "I work against these systems daily and want to understand how they are built, not only how they behave under stress."
+      },
+      {
+        "title": "Kubernetes, ArgoCD and GitOps",
+        "note": "Moving from operating enterprise delivery pipelines to designing and owning them."
+      },
+      {
+        "title": "Go",
+        "note": "For the systems and operator work that follows from the above."
+      }
+    ]
+  },
+
+  "building": {
+    "heading": "What I'm building",
+    "items": [
+      {
+        "title": "Full-stack applications with FastAPI and Vue",
+        "note": "Internal platform services for engineering organisations, from API design through to the UI."
+      },
+      {
+        "title": "LLM-powered developer tooling",
+        "note": "Retrieval pipelines and agents applied to log analysis and root-cause work, turning unstructured system output into something engineers can act on."
+      },
+      {
+        "title": "Distributed systems infrastructure in Python",
+        "note": "Asynchronous frameworks that drive high-concurrency workloads across multi-cluster storage environments, and fault-injection systems that model node failures, control-plane outages and network partitions."
+      }
+    ]
+  },
+
+  "outlook": "Software engineering at the intersection of storage and cloud infrastructure and AI-powered developer tooling. Depth in distributed systems over breadth across frameworks. Open to collaborating on infrastructure and developer tooling projects.",
+
+  "experience": [
+    {
+      "company": "NetApp",
+      "location": "Research Triangle Park, NC",
+      "url": "https://www.netapp.com",
+      "roles": [
+        {
+          "title": "Software Engineer 3",
+          "start": "2024-09",
+          "end": null,
+          "summary": "Full-stack platform tooling, LLM-powered developer tooling, and asynchronous Python infrastructure for multi-cluster storage systems.",
+          "highlights": [
+            {
+              "label": "Full-stack platform tooling",
+              "text": "Build internal applications with FastAPI and Vue — API design through to UI — used by engineering teams for platform operations and reporting."
+            },
+            {
+              "label": "LLM developer tooling",
+              "text": "Build retrieval pipelines and agents that turn unstructured system output into usable signal for debugging and root-cause work."
+            },
+            {
+              "label": "Asynchronous Python at scale",
+              "text": "Architect async frameworks that drive high-concurrency workloads across distributed multi-cluster storage environments."
+            },
+            {
+              "label": "Fault injection",
+              "text": "Design systems that model node failures, control-plane outages, network partitions and storage-layer faults — deliberately breaking clusters to find what real failures would."
+            },
+            {
+              "label": "Distributed systems debugging",
+              "text": "Work across the control and data plane at system level, surfacing race conditions, consistency issues and performance bottlenecks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "North Carolina Institute for Climate Studies",
+      "shortName": "NC Institute for Climate Studies",
+      "location": "Asheville, NC",
+      "url": "https://ncics.org",
+      "roles": [
+        {
+          "title": "Cloud Engineer",
+          "start": "2024-08",
+          "end": "2024-09",
+          "summary": "Automated pipeline provisioning and orchestration with Infrastructure as Code and an event-driven architecture.",
+          "highlights": [
+            {
+              "label": "Pipeline orchestration",
+              "text": "Automated pipeline provisioning and orchestration with Infrastructure as Code and an event-driven architecture, removing the manual steps from the workflow."
+            }
+          ]
+        },
+        {
+          "title": "Cloud Engineer Intern",
+          "start": "2023-06",
+          "end": "2024-05",
+          "summary": "Built AWS ETL pipelines for multi-dimensional climate data, cutting processing time by 60%.",
+          "highlights": [
+            {
+              "label": "Geospatial ETL on AWS",
+              "text": "Built an ETL pipeline to transform and load multi-dimensional climate data, extending what the group could process."
+            },
+            {
+              "label": "60% faster processing",
+              "text": "Cut data processing time by 60% through revised processing techniques and scalable managed cloud services."
+            },
+            {
+              "label": "Infrastructure as Code",
+              "text": "Automated and streamlined data workflows with IaC, integrating the AWS services the pipeline depended on."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Seagate Technology",
+      "location": "Pune, India",
+      "url": "https://www.seagate.com",
+      "roles": [
+        {
+          "title": "Software Engineer II",
+          "start": "2019-07",
+          "end": "2022-07",
+          "summary": "Led the automated testing frameworks and CI infrastructure used to validate enterprise storage platforms, and an 8-person global team.",
+          "highlights": [
+            {
+              "label": "Validation frameworks",
+              "text": "Led development of the automated testing frameworks used to validate enterprise storage platforms — the infrastructure other engineers depended on to ship firmware safely."
+            },
+            {
+              "label": "37% faster test cycles",
+              "text": "Cut test execution time by 37% by automating over 60% of the suite and rebuilding the CI pipeline on Jenkins, reducing bug escapes to the production branch."
+            },
+            {
+              "label": "Failure-mode design",
+              "text": "Designed validation strategies for storage arrays around failure scenarios, recovery paths and behaviour under sustained load."
+            },
+            {
+              "label": "Team leadership",
+              "text": "Led an 8-person engineering team across India, Singapore and the US, owning delivery planning, onboarding and mentorship on the automation frameworks."
+            }
+          ]
+        },
+        {
+          "title": "Software Engineer Intern",
+          "start": "2019-01",
+          "end": "2019-07",
+          "summary": "Automation scripts for test-tool installation and RAID product validation.",
+          "highlights": [
+            {
+              "label": "Cross-platform automation",
+              "text": "Developed automation scripts for test-tool installation across Windows and Linux servers."
+            },
+            {
+              "label": "RAID product validation",
+              "text": "Executed 40% of the test cases for the Vikings RAID product line."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "GopherStore",
+      "repo": "https://github.com/TejasPrabhu/GopherStore",
+      "year": 2024,
+      "attribution": "solo",
+      "blurb": "A decentralised peer-to-peer file storage system in Go, with TCP-based transfer between nodes and GZIP-compressed streaming.",
+      "stack": ["Go", "TCP/IP", "GZIP"]
+    },
+    {
+      "name": "TranscoderX",
+      "repo": "https://github.com/TejasPrabhu/TranscoderX",
+      "year": 2024,
+      "attribution": "solo",
+      "blurb": "An event-driven microservices platform for video-to-audio conversion, deployed on Amazon EKS with Flask services, MongoDB and PostgreSQL behind a React front end.",
+      "stack": ["Python", "Flask", "Kubernetes", "EKS", "MongoDB", "PostgreSQL", "React"]
+    },
+    {
+      "name": "BrewOps",
+      "repo": "https://github.com/TejasPrabhu/BrewOps",
+      "year": 2024,
+      "attribution": "solo",
+      "blurb": "A GitHub Actions pipeline that builds, tests, security-scans and deploys a containerised application to Amazon EKS.",
+      "stack": ["GitHub Actions", "Trivy", "Docker", "Kubernetes", "EKS"]
+    },
+    {
+      "name": "IronClad",
+      "repo": "https://github.com/TejasPrabhu/IronClad",
+      "year": 2024,
+      "attribution": "team",
+      "blurb": "An end-to-end CI/CD environment for a Java application on AWS — infrastructure provisioned with Terraform and Ansible, and a Jenkins pipeline with SonarQube quality gates deploying to Kubernetes.",
+      "stack": ["AWS", "Terraform", "Ansible", "Jenkins", "SonarQube", "Docker", "Kubernetes"]
+    },
+    {
+      "name": "Donatify",
+      "repo": "https://github.com/TejasPrabhu/Donatify",
+      "year": 2022,
+      "attribution": "team",
+      "blurb": "A donation marketplace matching donors with recipients — authentication, product filtering and inventory management on Flask and PostgreSQL, with a React front end and CI.",
+      "stack": ["Python", "Flask", "PostgreSQL", "React", "JavaScript"]
+    }
+  ],
+
+  "skills": [
+    {
+      "group": "Languages",
+      "items": ["Python", "Go", "JavaScript", "SQL", "Bash"]
+    },
+    {
+      "group": "Backend & distributed systems",
+      "items": ["FastAPI", "asyncio", "REST APIs", "PostgreSQL", "MongoDB", "Flask"]
+    },
+    {
+      "group": "Frontend",
+      "items": ["Vue", "HTML", "CSS"]
+    },
+    {
+      "group": "AI & LLM tooling",
+      "items": ["Retrieval pipelines", "LLM agents", "Unstructured log analysis"]
+    },
+    {
+      "group": "Infrastructure",
+      "items": ["Kubernetes", "Docker", "Terraform", "Ansible", "AWS", "Azure"]
+    },
+    {
+      "group": "Delivery & tooling",
+      "items": ["Jenkins", "GitHub Actions", "ArgoCD", "Git", "Linux"]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "North Carolina State University",
+      "degree": "Master of Computer Science",
+      "field": "Computer Science",
+      "start": "2022-08",
+      "end": "2024-05",
+      "location": "Raleigh, NC"
+    },
+    {
+      "institution": "Vishwakarma Institute of Technology, Pune",
+      "degree": "B.Tech",
+      "field": "Electronics Engineering",
+      "start": "2015-08",
+      "end": "2019-05",
+      "location": "Pune, India"
+    }
+  ],
+
+  "certifications": [
+    {
+      "code": "AZ-400",
+      "name": "Microsoft Certified: DevOps Engineer Expert",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/TejasPrabhu-6216/7BA737D3B509EC24?sharingId=6798F8A49F094D70"
+    },
+    {
+      "code": "AZ-204",
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/TejasPrabhu-6216/2402802CB37F033E?sharingId=6798F8A49F094D70"
+    },
+    {
+      "code": "AI-900",
+      "name": "Microsoft Certified: Azure AI Fundamentals",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/TejasPrabhu-6216/C008456E783B73CF?sharingId=6798F8A49F094D70"
+    },
+    {
+      "code": "AZ-900",
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/TejasPrabhu-6216/A88E06953F0F89AF?sharingId=6798F8A49F094D70"
+    }
+  ],
+
+  "publications": [
+    {
+      "title": "Carbon nanotube based gas sensor",
+      "note": "Undergraduate research, Electronics Engineering",
+      "url": null
+    }
+  ],
+
+  "seo": {
+    "canonical": "https://tejasprabhu.com/",
+    "title": "Tejas Prabhu — Software Engineer",
+    "description": "Software engineer at NetApp building full-stack tooling and asynchronous Python infrastructure for enterprise storage systems. Previously Seagate Technology and the NC Institute for Climate Studies.",
+    "ogImage": "og-image.png",
+    "themeColor": "#0b0d10"
+  }
+}

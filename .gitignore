@@ -1,4 +1,8 @@
-rough.md
-blog-single.html
-portfolio-details.html
+node_modules/
+dist/
 
+# Scratch notes
+rough.md
+
+.DS_Store
+*.log

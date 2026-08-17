@@ -1,0 +1,109 @@
+/* ---------------------------------------------------------------------------
+   Design tokens.
+
+   Light is the base definition on bare :root. Dark is applied twice — once for
+   viewers on the system default (prefers-color-scheme, guarded so an explicit
+   light choice still wins) and once for an explicit [data-theme="dark"] — so the
+   toggle overrides in both directions. No component may use a colour literal.
+   All text/background pairs below are >= 4.5:1.
+--------------------------------------------------------------------------- */
+
+:root {
+  color-scheme: light;
+
+  --bg: #ffffff;
+  --bg-subtle: #f6f7f9;
+  --surface: #ffffff;
+  --surface-hover: #f6f7f9;
+  --border: #e3e6ea;
+  --border-strong: #cbd1d9;
+
+  --text: #14181d;
+  --text-muted: #59616b;
+
+  --accent: #1257c9;
+  --accent-hover: #0e46a3;
+  --accent-contrast: #ffffff;
+  --accent-subtle: #eef3fd;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(2rem, 1.6rem + 2vw, 3rem);
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.65;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --radius: 6px;
+  --radius-lg: 10px;
+  --radius-pill: 999px;
+
+  --shadow: 0 1px 2px rgb(20 24 29 / 6%), 0 4px 12px rgb(20 24 29 / 6%);
+
+  --header-height: 3.5rem;
+  --wrap: 68rem;
+  --prose: 40rem;
+
+  --transition: 150ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --bg: #0b0d10;
+    --bg-subtle: #101317;
+    --surface: #12161b;
+    --surface-hover: #171c22;
+    --border: #232a32;
+    --border-strong: #333c46;
+
+    --text: #e6e9ee;
+    --text-muted: #9aa4b0;
+
+    --accent: #6ea8fe;
+    --accent-hover: #92bffe;
+    --accent-contrast: #08131f;
+    --accent-subtle: #131c29;
+
+    --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 4px 12px rgb(0 0 0 / 30%);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0b0d10;
+  --bg-subtle: #101317;
+  --surface: #12161b;
+  --surface-hover: #171c22;
+  --border: #232a32;
+  --border-strong: #333c46;
+
+  --text: #e6e9ee;
+  --text-muted: #9aa4b0;
+
+  --accent: #6ea8fe;
+  --accent-hover: #92bffe;
+  --accent-contrast: #08131f;
+  --accent-subtle: #131c29;
+
+  --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 4px 12px rgb(0 0 0 / 30%);
+}
